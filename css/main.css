@@ -97,7 +97,7 @@ textarea {
 
 
 html {
-  background-color: #fff;
+  background-color: #19aea9;
   height: 100%;
   width: 100%;
 }
@@ -107,32 +107,80 @@ body {
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.wrapper {
+.flex-container {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
+  max-width: 1200px;
 }
 
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1em;
-  background-color: #19aea9;
-  height: 300px;
-  width: 30%;
+header,
+footer {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
+  justify-content: flex-start;
 }
 
+header h1 {
+    font-size: 3em;
+}
 
+span {
+    color: #fff;
+}
+main {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+  }
 
+main p {
+    font-size: 1.35em;
+  }
+
+  .flex-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5em;
+    font-size: 1em;
+  }
+
+  #div-1, #div-2, #div-3 {
+    color: #fff;
+    line-height: 1.5em;
+    font-size: 1em;
+    height: 300px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.45em;
+  }
+
+#div-1 {
+    border-right: solid black 0.15em;
+}
+
+#div-3 {
+    border-left: solid black 0.15em;
+    padding-left: 1em;
+}
+
+footer {
+    border-top: 1px solid #fff;
+  }
+  
+  footer i {
+    padding: 30px 20px 0 0;
+  }
 
 /* ==========================================================================
    Helper classes
